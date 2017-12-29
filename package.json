@@ -9,10 +9,11 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve",
-    "precommit": "npm run lint",
-    "prepush": "npm run lint"    
+    "ionic:serve": "ionic-app-scripts serve"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
@@ -35,6 +36,8 @@
   "devDependencies": {
     "@ionic/app-scripts": "3.1.6",
     "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "pre-commit": "^1.2.2",
     "typescript": "2.4.2"
   },
   "description": "An Ionic project"
