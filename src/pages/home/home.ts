@@ -13,6 +13,7 @@ export class HomePage {
 
   ngOnInit() {
     var test = "test1122";
+    var test = "test";
   }
 
 }
