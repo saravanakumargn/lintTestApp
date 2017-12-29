@@ -11,9 +11,5 @@ export class HomePage {
 
   }
 
-  ngOnInit() {
-    var test = "test";
-    var test = "test111";
-  }
 
 }
